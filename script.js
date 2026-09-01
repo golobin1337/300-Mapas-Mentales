@@ -1,6 +1,7 @@
 (function(){
   // Level tabs
   var tabs = document.querySelectorAll('.level-tab');
+  var levelPlaceholder = document.getElementById('levelPlaceholder');
   tabs.forEach(function(tab){
     tab.addEventListener('click', function(){
       var level = tab.getAttribute('data-level');
@@ -9,6 +10,7 @@
       tab.classList.add('active');
       var panel = document.getElementById('panel-'+level);
       if(panel){ panel.classList.add('active'); }
+      if(levelPlaceholder){ levelPlaceholder.classList.add('hidden'); }
     });
   });
 

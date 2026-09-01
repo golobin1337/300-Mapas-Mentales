@@ -413,6 +413,22 @@ section{padding:76px 0;}
   box-shadow:var(--shadow-card);
 }
 .level-panel.active{display:block;}
+
+.level-placeholder{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:var(--white);
+  border:2px dashed var(--sand-line);
+  border-radius:var(--radius-lg);
+  padding:56px 32px;
+}
+.level-placeholder.hidden{display:none;}
+.level-placeholder .lp-hand{font-size:2.2rem;margin-bottom:14px;}
+.level-placeholder h3{font-size:1.2rem;margin-bottom:10px;}
+.level-placeholder p{color:var(--sand);font-size:0.95rem;max-width:420px;line-height:1.55;}
 .lp-head{
   display:flex;
   justify-content:space-between;
