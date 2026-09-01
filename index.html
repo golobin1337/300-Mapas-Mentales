@@ -45,11 +45,11 @@
 
     <div class="avatars">
       <div class="avatar-stack">
-        <div class="a" style="background:#F0665B">M</div>
-        <div class="a" style="background:#4C9AFF">D</div>
-        <div class="a" style="background:#2FA669">S</div>
-        <div class="a" style="background:#F0B400">L</div>
-        <div class="a" style="background:#9B6BD6">C</div>
+        <img class="a" src="public/profile1.jpg" alt="Alumno del Kit">
+        <img class="a" src="public/profile2.jpg" alt="Alumno del Kit">
+        <img class="a" src="public/profile3.jpg" alt="Alumno del Kit">
+        <img class="a" src="public/profile4.jpg" alt="Alumno del Kit">
+        <img class="a" src="public/profile5.jpg" alt="Alumno del Kit">
       </div>
       <span class="avatars-caption">¡Más de 1.456 alumnos!</span>
     </div>
@@ -65,76 +65,19 @@
       <p>Mapas ilustrados y organizados para facilitar tus estudios y repasos rápidos.</p>
     </div>
   </div>
-  <div class="wrap" style="max-width:1280px;">
-    <div class="scroller" id="mapScroller">
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Personas<small>People</small></div>
-          <span class="mc-level">Nivel A1</span>
-        </div>
-        <div class="mc-chips"><span>viejo/a amigo/a</span><span>vecino/a</span><span>estudiante</span></div>
-        <div class="mc-box"><div class="lab">Frase de ejemplo</div><p>"He is a teacher." · Él es profesor.</p></div>
-        <div class="mc-box"><div class="lab">Mini ejercicio</div><p>1. I am a ___ (student) · 2. She is my ___ (friend)</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
+  <div class="wrap" style="max-width:900px;">
+    <div class="carousel" id="mapCarousel">
+      <div class="carousel-track">
+        <img class="carousel-slide active" src="public/personas.jpg" alt="Mapa mental: Personas (People) - Nivel A1">
+        <img class="carousel-slide" src="public/much.jpg" alt="Mapa mental: Much y Many - Nivel A2">
+        <img class="carousel-slide" src="public/was.jpg" alt="Mapa mental: Was y Were - Nivel A2">
+        <img class="carousel-slide" src="public/can.jpg" alt="Mapa mental: Can y Couldn't - Nivel A2">
+        <img class="carousel-slide" src="public/did.jpg" alt="Mapa mental: Did y Didn't - Nivel A2">
       </div>
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Profesiones<small>Professions</small></div>
-          <span class="mc-level">Nivel A1</span>
-        </div>
-        <div class="mc-chips"><span>doctor(a)</span><span>ingeniero(a)</span><span>abogado(a)</span></div>
-        <div class="mc-box"><div class="lab">Pregunta útil</div><p>"What do you do?" · ¿A qué te dedicas?</p></div>
-        <div class="mc-box"><div class="lab">Dica rápida</div><p>Usamos WHAT + DO para preguntar la profesión de alguien.</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
-      </div>
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Much y Many<small>Much and Many</small></div>
-          <span class="mc-level">Nivel A2</span>
-        </div>
-        <div class="mc-chips"><span>incontables</span><span>contables</span></div>
-        <div class="mc-box"><div class="lab">Regla clave</div><p>MUCH → sustantivos incontables · MANY → sustantivos contables.</p></div>
-        <div class="mc-box"><div class="lab">Ejemplo</div><p>"How much money do you have?"</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
-      </div>
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Was y Were<small>Was and Were</small></div>
-          <span class="mc-level">Nivel A2</span>
-        </div>
-        <div class="mc-chips"><span>I / he / she / it</span><span>you / we / they</span></div>
-        <div class="mc-box"><div class="lab">Afirmativo</div><p>"I was tired." · "They were at home."</p></div>
-        <div class="mc-box"><div class="lab">Dica rápida</div><p>WAS es singular, WERE es plural del pasado de "to be".</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
-      </div>
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Phrasal Verbs<small>con Get</small></div>
-          <span class="mc-level">Nivel B2</span>
-        </div>
-        <div class="mc-chips"><span>get up</span><span>get over</span><span>get along</span></div>
-        <div class="mc-box"><div class="lab">Ejemplo</div><p>"I finally got over the flu." · Por fin me recuperé de la gripe.</p></div>
-        <div class="mc-box"><div class="lab">Mini ejercicio</div><p>She needs to ___ up early. (get)</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
-      </div>
-
-      <div class="map-card">
-        <div class="mc-top">
-          <div class="mc-title">Reported Speech<small>Estilo indirecto</small></div>
-          <span class="mc-level">Nivel B2</span>
-        </div>
-        <div class="mc-chips"><span>said</span><span>told</span><span>asked</span></div>
-        <div class="mc-box"><div class="lab">Ejemplo</div><p>"I'm tired" → She said (that) she was tired.</p></div>
-        <div class="mc-box"><div class="lab">Dica rápida</div><p>El tiempo verbal retrocede un paso al reportar el discurso.</p></div>
-        <div class="mc-foot">@aprendeinglesconmapas</div>
-      </div>
-
+      <button class="carousel-arrow prev" id="carouselPrev" aria-label="Imagen anterior">‹</button>
+      <button class="carousel-arrow next" id="carouselNext" aria-label="Imagen siguiente">›</button>
     </div>
+    <div class="carousel-dots" id="carouselDots"></div>
     <div class="btn-row"><a class="btn" href="#precio">Quiero Garantizar el Mío</a></div>
   </div>
 </section>
@@ -147,24 +90,66 @@
       <h2>Mira lo que dicen nuestros alumnos</h2>
       <p>Comentarios espontáneos de alumnos que ya adquirieron el Kit de Mapas Mentales.</p>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Todavía no he impreso nada y aun así lo uso normalmente desde el celular y la tablet. Los mapas se ven muy legibles y puedo estudiar en cualquier lugar."</p>
-        <div class="testi-who">
-          <div class="av" style="background:#4C9AFF">L</div>
-          <div><div class="name">Lucas F.</div><div class="role">Alumno del Kit</div></div>
+  </div>
+  <div class="wrap" style="max-width:1280px;">
+    <div class="testi-carousel-wrap">
+      <button class="carousel-arrow prev" id="testiPrev" aria-label="Testimonio anterior">‹</button>
+      <div class="testi-carousel" id="testiCarousel">
+
+        <div class="testi-card">
+          <div class="testi-photo" style="background-image:url('public/testi1.jpg')"></div>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Soy profesora de inglés y este kit me ahorró muchísimo tiempo. Uso los mapas para explicar y repasar los contenidos de forma más visual con mis alumnos."</p>
+          <div class="testi-who">
+            <img class="av" src="public/profile1.jpg" alt="Conceição V.">
+            <div><div class="name">Conceição V.</div><div class="role">Profesora, Alumna del Kit</div></div>
+          </div>
         </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Las 500 frases con pronunciación fueron el bono que más usé. Las escucho, las repito y practico hasta sentirme más segura para hablar."</p>
-        <div class="testi-who">
-          <div class="av" style="background:#9B6BD6">P</div>
-          <div><div class="name">Patricia M.</div><div class="role">Alumna del Kit</div></div>
+
+        <div class="testi-card">
+          <div class="testi-photo" style="background-image:url('public/testi2.jpg')"></div>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Lo compré pensando que sería solo un PDF más, pero el material está mucho más organizado de lo que esperaba. Los mapas son bonitos, fáciles de entender y dan ganas de seguir estudiando."</p>
+          <div class="testi-who">
+            <img class="av" src="public/profile2.jpg" alt="Jaime C.">
+            <div><div class="name">Jaime C.</div><div class="role">Alumno del Kit</div></div>
+          </div>
         </div>
+
+        <div class="testi-card">
+          <div class="testi-photo" style="background-image:url('public/testi3.jpg')"></div>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Mi rutina es muy ocupada y no puedo tomar clases largas. Con el plan diario, estudio un poco cada día y ya sé exactamente qué material abrir. Se volvió mucho más fácil mantener una rutina."</p>
+          <div class="testi-who">
+            <img class="av" src="public/profile3.jpg" alt="Leonel N.">
+            <div><div class="name">Leonel N.</div><div class="role">Alumno del Kit</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-photo" style="background-image:url('public/testi4.jpg')"></div>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Todavía no he impreso nada y aun así lo uso normalmente desde el celular y la tablet. Los mapas se ven muy legibles y puedo estudiar en cualquier lugar."</p>
+          <div class="testi-who">
+            <img class="av" src="public/profile4.jpg" alt="Maria F.">
+            <div><div class="name">Maria F.</div><div class="role">Alumna del Kit</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-photo" style="background-image:url('public/testi5.jpg')"></div>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Las 500 frases con pronunciación fueron el bono que más usé. Las escucho, las repito y practico hasta sentirme más segura para hablar."</p>
+          <div class="testi-who">
+            <img class="av" src="public/profile5.jpg" alt="Angela G.">
+            <div><div class="name">Angela G.</div><div class="role">Alumna del Kit</div></div>
+          </div>
+        </div>
+
       </div>
+      <button class="carousel-arrow next" id="testiNext" aria-label="Siguiente testimonio">›</button>
     </div>
+    <div class="carousel-dots" id="testiDots"></div>
     <div class="btn-row"><a class="btn" href="#precio">Quiero Garantizar el Mío</a></div>
   </div>
 </section>
@@ -312,7 +297,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow on-dark">Bonos exclusivos</span>
-      <h2 style="color:var(--cream)">También recibes 5 bonos especiales</h2>
+      <h2 style="color:var(--cream)">También recibes 6 bonos especiales</h2>
       <p>Aceleradores de aprendizaje incluidos 100% gratis en la oferta actual.</p>
     </div>
     <div class="bonus-grid">
@@ -356,6 +341,14 @@
         <p class="desc">Aprende cómo hablan realmente los nativos, con expresiones naturales, abreviaciones y ejemplos para usar en tu día a día.</p>
         <div class="bonus-price"><span class="old">Desde $9</span><span class="free">GRATIS</span></div>
       </div>
+      <div class="bonus-card">
+        <div class="bonus-thumb"><div class="bt-num">30</div><div class="bt-cap">Canciones con letra y traducción</div></div>
+        <span class="bonus-tag">Bono #6</span>
+        <h3>Guía para Aprender Inglés con Música</h3>
+        <div class="bonus-sub">🎵 El Método para Aprender Escuchando</div>
+        <p class="desc">El método simple para convertir tus canciones favoritas en una herramienta real para aprender inglés.</p>
+        <div class="bonus-price"><span class="old">Desde $9</span><span class="free">GRATIS</span></div>
+      </div>
     </div>
     <div class="btn-row"><a class="btn" href="#precio">Quiero Garantizar el Mío</a></div>
   </div>
@@ -378,12 +371,13 @@
         <div class="price-divider"></div>
         <div class="price-list-title">Resumen de la compra</div>
         <ul class="price-list">
-          <li><span class="name"><span class="check">✓</span>+300 Mapas Mentales de Inglés Imprimibles</span><span class="val">$29.00</span></li>
-          <li><span class="name"><span class="check">✓</span>Bono #1: 82 Ebooks + Audiolibros</span><span class="val">$10.00</span></li>
-          <li><span class="name"><span class="check">✓</span>Bono #2: 500 Frases Más Usadas</span><span class="val">$10.00</span></li>
-          <li><span class="name"><span class="check">✓</span>Bono #3: Plan Diario de Estudio</span><span class="val">$8.00</span></li>
-          <li><span class="name"><span class="check">✓</span>Bono #4: 100 Phrasal Verbs Esenciales</span><span class="val">$6.00</span></li>
-          <li><span class="name"><span class="check">✓</span>Bono #5: 150 Expresiones y Modismos</span><span class="val">$6.00</span></li>
+          <li><span class="name"><span class="check">✓</span>+300 Mapas Mentales de Inglés Imprimibles</span><span class="val"><s>$29.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #1: 82 Ebooks + Audiolibros</span><span class="val"><s>$10.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #2: 500 Frases Más Usadas</span><span class="val"><s>$10.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #3: Plan Diario de Estudio</span><span class="val"><s>$8.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #4: 100 Phrasal Verbs Esenciales</span><span class="val"><s>$6.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #5: 150 Expresiones y Modismos</span><span class="val"><s>$6.00</s></span></li>
+          <li><span class="name"><span class="check">✓</span>Bono #6: 30 Canciones con Letra y Traducción</span><span class="val"><s>$9.00</s></span></li>
         </ul>
         <a class="btn" href="#faq" onclick="return false;">Quiero Adquirirlo Ahora</a>
         <p class="microcopy" style="margin-top:14px;">🔒 Compra 100% segura. Tus datos están protegidos.</p>
@@ -507,6 +501,7 @@
         <li><span class="chk">✓</span><b>Bono #3: Plan Diario de Estudio</b></li>
         <li><span class="chk">✓</span><b>Bono #4: 100 Phrasal Verbs Esenciales</b></li>
         <li><span class="chk">✓</span><b>Bono #5: 150 Expresiones y Modismos</b></li>
+        <li><span class="chk">✓</span><b>Bono #6: 30 Canciones con Letra y Traducción</b></li>
         <li class="g"><span class="chk">✓</span><b>Garantía Incondicional de 7 Días</b></li>
       </ul>
     </div>
@@ -514,7 +509,7 @@
 </section>
 
 <footer>
-  Página adaptada al español (LatAm) a partir del material original. · Todos los derechos reservados.
+  300 Mapas Mentales - Todos los derechos reservados.
 </footer>
 
 <script src="script.js"></script>
