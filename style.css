@@ -334,10 +334,11 @@ section{padding:76px 0;}
 }
 .testi-photo{
   width:100%;
-  aspect-ratio:1/1;
+  aspect-ratio:4/5;
   border-radius:14px;
-  background:var(--cream-deep);
-  background-size:cover;
+  background-color:var(--cream-deep);
+  background-size:contain;
+  background-repeat:no-repeat;
   background-position:center;
 }
 .testi-card .stars{font-size:0.95rem;}
@@ -513,6 +514,15 @@ section{padding:76px 0;}
   padding:18px;
   margin-bottom:16px;
   text-align:center;
+}
+.bonus-thumb.img-thumb{
+  background:var(--cream-deep);
+  padding:10px;
+}
+.bonus-thumb.img-thumb img{
+  width:100%;
+  border-radius:8px;
+  display:block;
 }
 .bonus-thumb .bt-num{
   font-family:'Baloo 2',sans-serif;
