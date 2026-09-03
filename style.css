@@ -142,6 +142,14 @@ section{padding:76px 0;}
   max-width:800px;
   margin:0 auto 18px;
 }
+@media(max-width:480px){
+  .rating-pill{margin-bottom:18px;}
+  .hero h1{
+    font-size:1.9rem;
+    line-height:1.16;
+    margin:0 auto 12px;
+  }
+}
 .hero h1 mark{
   background:none;
   color:var(--yellow);
