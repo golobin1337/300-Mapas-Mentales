@@ -142,13 +142,15 @@ section{padding:76px 0;}
   max-width:800px;
   margin:0 auto 18px;
 }
+.mobile-break{display:none;}
 @media(max-width:480px){
   .rating-pill{margin-bottom:18px;}
   .hero h1{
-    font-size:1.9rem;
-    line-height:1.16;
+    font-size:1.55rem;
+    line-height:1.22;
     margin:0 auto 12px;
   }
+  .mobile-break{display:inline;}
 }
 .hero h1 mark{
   background:none;
